@@ -1,0 +1,10 @@
+body {
+	background-color: #34495e;
+}
+
+.image.corner_bg {
+	position: fixed;
+	bottom: 0; right: 0;
+	z-index: 100;
+	width: 50%;
+}
