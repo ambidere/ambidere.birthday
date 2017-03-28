@@ -1,0 +1,142 @@
+{
+	"aqours" : {
+		"name" : "Aqours",
+		"anime" : "Love Live! Sunshine!!",
+		"members" : [
+			{
+				"id" : "anchan",
+				"english" : "Inami Anju",
+				"kanji" : "伊波杏樹",
+				"twitter" : "anju_inami",
+				"birthday" : "02-07-1996",
+				"background" : "#ff944b"
+			},
+			{
+				"id" : "rikyako",
+				"english" : "Rikako Aida",
+				"kanji" : "逢田梨香子",
+				"twitter" : "Rikako_Aida",
+				"birthday" : "08-08-1992",
+				"background" : "#ff8888"
+			},
+			{
+				"id" : "suwawa",
+				"english" : "Nanaka Suwa",
+				"kanji" : "諏訪ななか",
+				"twitter" : "suwananaka",
+				"birthday" : "11-02-1994",
+				"background" : "#4ccbad"
+			},
+			{
+				"id" : "arisha",
+				"english" : "Arisa Komiya",
+				"kanji" : "小宮有紗",
+				"twitter" : "box_komiyaarisa",
+				"birthday" : "02-05-1994",
+				"background" : "#e85c5c"
+			},
+			{
+				"id" : "shukashuu",
+				"english" : "Saitou Shuka",
+				"kanji" : "斉藤朱夏",
+				"twitter" : "Saito_Shuka",
+				"birthday" : "08-16-1996",
+				"background" : "#4cb1dc"
+			},
+			{
+				"id" : "aikyan",
+				"english" : "Aika Kobayashi",
+				"kanji" : "小林愛香",
+				"twitter" : "Aikyan_",
+				"birthday" : "10-23-1993",
+				"background" : "#adadad"
+			},
+			{
+				"id" : "king",
+				"english" : "Kanako Takatsuki",
+				"kanji" : "高槻かなこ",
+				"twitter" : "Kanako_tktk",
+				"birthday" : "09-25-1993",
+				"background" : "#cfbc21"
+			},
+			{
+				"id" : "ainyan",
+				"english" : "Aina Suzuki",
+				"kanji" : "鈴木愛奈",
+				"twitter" : "aina_suzuki723",
+				"birthday" : "07-23-1995",
+				"background" : "#aa48db"
+			},
+			{
+				"id" : "furirin",
+				"english" : "Ai Furihata",
+				"kanji" : "降幡愛",
+				"twitter" : "Rikako_Aida",
+				"birthday" : "02-19-1994",
+				"background" : "#e371ba"
+			}
+		]
+	},
+	"wug" : {
+		"name" : "Wake Up, Girls!",
+		"anime" : "Wake Up, Girls!",
+		"members" : [
+			{
+				"id" : "myuchan",
+				"english" : "Miyu Takagi",
+				"kanji" : "高木美佑",
+				"twitter" : "",
+				"birthday" : "09-08-1996",
+				"background" : "#ff944b"
+			},
+			{
+				"id" : "nanamin",
+				"english" : "Nanami Yamashita",
+				"kanji" : "山下七海",
+				"twitter" : "",
+				"birthday" : "07-19-1995",
+				"background" : "#ff944b"
+			},
+			{
+				"id" : "minyami",
+				"english" : "Minami Tanaka",
+				"kanji" : "田中美海",
+				"twitter" : "",
+				"birthday" : "01-22-1996",
+				"background" : "#ff944b"
+			},
+			{
+				"id" : "mayushii",
+				"english" : "Mayu Yoshioka",
+				"kanji" : "吉岡茉祐",
+				"twitter" : "",
+				"birthday" : "11-07-1995",
+				"background" : "#ff944b"
+			},
+			{
+				"id" : "aichan",
+				"english" : "Airi Eino",
+				"kanji" : "永野愛理",
+				"twitter" : "",
+				"birthday" : "01-19-1993",
+				"background" : "#ff944b"
+			},
+			{
+				"id" : "kayatan",
+				"english" : "Kaya Okuno",
+				"kanji" : "奥野香耶",
+				"twitter" : "",
+				"birthday" : "03-01-1991",
+				"background" : "#ff944b"
+			},
+			{
+				"id" : "yoppi",
+				"english" : "Yoshino Aoyama",
+				"kanji" : "青山吉能",
+				"twitter" : "",
+				"birthday" : "05-15-1996",
+				"background" : "#ff944b"
+			}
+		]
+	}
+}

@@ -1,43 +1,53 @@
 import React, { Component } from 'react'
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
+import _ from 'lodash'
+import { Sidebar, Segment, Button, Menu, Image } from 'semantic-ui-react'
+
+import { connect } from "react-redux"
+
+import { getBirthdayForGroup } from "../actions"
+
+@connect((store) => {
+	return {
+		name : store.name,
+		members : store.members
+	};
+})
 
 export default class Layout extends Component {
 	constructor() {
 		super();
-		this.state = { 
-			visible: true 
-		};
 	}
 
-	toggleVisibility() {
-		const { visible } = this.state
-		this.setState({ visible: !visible })
+	handleItemClick(e, data) {
+		this.props.dispatch(getBirthdayForGroup(data.name))
 	} 
 
 	render() {
-		const { visible } = this.state
+		const { name, members } = this.props
+		const mappedTweets = members.map(member => <li>{member.kanji} {member.birthday}</li>)
+
 		return (
 			<div id="container">
-		        <Sidebar.Pushable as={Segment}>
-		        	<Sidebar as={Menu} animation='scale down' width='thin' visible={visible} icon='labeled' vertical inverted>
-		        		<Menu.Item name='home'>
-		            		<Image centered src='assets/logos/ambimoe.png'/>
-		            	</Menu.Item>
-		            	<Menu.Item name='wug'>
-		              		<Image centered src='assets/logos/wug.gif'/>
-		            	</Menu.Item>
-		            	<Menu.Item name='aqours'>
-		              		<Image centered src='assets/logos/aqours.png'/>
-		            	</Menu.Item>
-		            	<Menu.Item name='million'>
-		              		<Image centered src='assets/logos/million.png'/>
-		            	</Menu.Item>
-		        	</Sidebar>
-		        	<Sidebar.Pusher>
-		            	<Segment basic>
-		            	</Segment>
-		        	</Sidebar.Pusher>
-		        </Sidebar.Pushable>
+		        <Sidebar as={Menu} animation='scale down' visible={true} width='thin' icon='labeled' vertical inverted>
+	        		<Menu.Item name='home'>
+	            		<Image centered src='assets/logos/ambimoe.png'/>
+	            	</Menu.Item>
+	            	<Menu.Item name='wug' onClick={this.handleItemClick.bind(this)}>
+	              		<Image centered src='assets/logos/wug.gif'/>
+	            	</Menu.Item>
+	            	<Menu.Item name='aqours' onClick={this.handleItemClick.bind(this)}>
+	              		<Image centered src='assets/logos/aqours.png'/>
+	            	</Menu.Item>
+	            	<Menu.Item name='million' onClick={this.handleItemClick.bind(this)}>
+	              		<Image centered src='assets/logos/million.png'/>
+	            	</Menu.Item>
+	        	</Sidebar>
+	        	<main>
+	        		<h1>{name}</h1>
+		        	<ul>
+		        		{mappedTweets}
+		        	</ul>
+	        	</main>
 		        <Image className='corner_bg' src='assets/bg/marei.png'/>
 			</div>
 		);
