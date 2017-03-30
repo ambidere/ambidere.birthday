@@ -5,12 +5,14 @@ export default function reducer(state={
 	action) {
 	switch (action.type) {
 		case "FETCH_PER_GROUP_SUCCESS" : {
-			return {...state, name : action.payload.name, members : action.payload.members}
+			return {...state, name : action.payload.name, members : action.payload.members, fetching: false}
 		}
 		case "FETCH_PER_GROUP_FAIL" : {
-			return {...state, error : action.payload}
+			return {...state, error : action.payload, fetching: false}
+		}
+		case "FETCH_STARTED" : {
+			return {...state, fetching : true}
 		}
 	}
-
 	return state
 }

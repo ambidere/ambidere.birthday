@@ -71,7 +71,7 @@
 				"id" : "furirin",
 				"english" : "Ai Furihata",
 				"kanji" : "降幡愛",
-				"twitter" : "Rikako_Aida",
+				"twitter" : "furihata_ai",
 				"birthday" : "02-19-1994",
 				"background" : "#e371ba"
 			}
@@ -138,5 +138,10 @@
 				"background" : "#ff944b"
 			}
 		]
+	},
+	"million" : {
+		"name" : "Million Live!",
+		"anime" : "",
+		"members" : []
 	}
 }
