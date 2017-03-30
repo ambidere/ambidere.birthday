@@ -12,3 +12,9 @@ export function getBirthdayForGroup(name) {
 			 });
 	}
 }
+
+export function clearBirthdays() {
+	return function(dispatch) {
+		dispatch({type: "CLEAR_BIRTHDAYS"})
+	}
+}

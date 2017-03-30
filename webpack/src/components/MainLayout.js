@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
-import { Sidebar, Button, Menu, Image, Dimmer, Loader } from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react'
 
 import { connect } from "react-redux"
-import BirthdayCount from "./BirthdayCount"
+
+import LoaderContainer from "./LoaderContainer"
+import BirthdayContainer from "./BirthdayContainer"
+import SidebarContainer from "./SidebarContainer"
 
 import { getBirthdayForGroup } from "../actions"
 
@@ -15,52 +18,35 @@ import { getBirthdayForGroup } from "../actions"
 })
 
 export default class MainLayout extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
+		this.state = {
+			active : this.props.group
+		};
 	}
 
-	handleItemClick(e, data) {
-		this.props.dispatch(getBirthdayForGroup(data.name))
+	componentDidMount() {
+		if (this.props.group) {
+			this.props.dispatch(getBirthdayForGroup(this.props.group));
+			this.setState({
+				active : this.props.group
+			});
+		}
 	}
 
 	render() {
-		const { name, members, fetching } = this.props 
-		const mappedTweets = members.map(member => <BirthdayCount key={member.id} member={member}/>)
-		const data = fetching ?
-		     		""
-			   		:
-	        		<div>
-	        		<h1>{name}</h1>
-		        		<ul>
-		        			{mappedTweets}
-		        		</ul> 
-		        	</div>;
+		const { name, members, fetching, dispatch } = this.props;
+		const { active } = this.state;
+		
+		const data = fetching ? <LoaderContainer/> : <BirthdayContainer name={name} members={members}/>;
 
-		const loader = fetching ? 
-					<Dimmer active>
-		     			<Loader>Loading</Loader>
-		     		</Dimmer> : "";
 		return (
 			<div id="container">
-		        <Sidebar as={Menu} animation='scale down' visible={true} width='thin' icon='labeled' vertical inverted>
-	        		<Menu.Item name='home'>
-	            		<Image centered src='assets/logos/ambimoe.png'/>
-	            	</Menu.Item>
-	            	<Menu.Item name='wug' onClick={this.handleItemClick.bind(this)}>
-	              		<Image centered src='assets/logos/wug.gif'/>
-	            	</Menu.Item>
-	            	<Menu.Item name='aqours' onClick={this.handleItemClick.bind(this)}>
-	              		<Image centered src='assets/logos/aqours.png'/>
-	            	</Menu.Item>
-	            	<Menu.Item name='million' onClick={this.handleItemClick.bind(this)}>
-	              		<Image centered src='assets/logos/million.png'/>
-	            	</Menu.Item>
-	        	</Sidebar>
+	        	<SidebarContainer active={active} dispatch={dispatch}/>
 	        	<main>
 	        		{data}
 	        	</main>
 		        <Image className='corner_bg' src='assets/bg/marei.png'/>
-		        {loader}
 			</div>
 		);
 	}

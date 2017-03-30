@@ -13,6 +13,9 @@ export default function reducer(state={
 		case "FETCH_STARTED" : {
 			return {...state, fetching : true}
 		}
+		case "CLEAR_BIRTHDAYS" : {
+			return {...state, name : "", members : []}
+		}
 	}
 	return state
 }
