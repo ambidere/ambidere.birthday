@@ -10,15 +10,15 @@ export default class BirthdayContainer extends Component {
 	}
 
 	render() {
-		const { name, members } = this.props;
-		const mappedTweets = members.map(member => <BirthdayCountdown key={member.id} member={member}/>);
+		const { group_id, name, members } = this.props;
+		const mappedCountdown = members.map(member => <BirthdayCountdown group_id={group_id} key={member.id} member={member}/>);
 
 		return (
-			<div className="birthdayContainer">
+			<div className="groupContainer">
         		<h1>{name}</h1>
-        		<ul>
-        			{mappedTweets}
-        		</ul> 
+        		<div className="membersContainer">
+        			{mappedCountdown}
+        		</div> 
 	        </div>
 	    );
 	}

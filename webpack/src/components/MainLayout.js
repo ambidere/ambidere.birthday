@@ -11,6 +11,7 @@ import { getBirthdayForGroup } from "../actions"
 
 @connect((store) => {
 	return {
+		group_id : store.id,
 		name : store.name,
 		members : store.members,
 		fetching : store.fetching
@@ -35,10 +36,10 @@ export default class MainLayout extends Component {
 	}
 
 	render() {
-		const { name, members, fetching, dispatch } = this.props;
+		const { name, members, group_id, fetching, dispatch } = this.props;
 		const { active } = this.state;
 		
-		const data = fetching ? <LoaderContainer/> : <BirthdayContainer name={name} members={members}/>;
+		const data = fetching ? <LoaderContainer/> : <BirthdayContainer group_id={group_id} name={name} members={members}/>;
 
 		return (
 			<div id="container">

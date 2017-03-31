@@ -1,5 +1,6 @@
 {
 	"aqours" : {
+		"id" : "aqours",
 		"name" : "Aqours",
 		"anime" : "Love Live! Sunshine!!",
 		"members" : [
@@ -78,6 +79,7 @@
 		]
 	},
 	"wug" : {
+		"id" : "wug",
 		"name" : "Wake Up, Girls!",
 		"anime" : "Wake Up, Girls!",
 		"members" : [
@@ -87,7 +89,7 @@
 				"kanji" : "高木美佑",
 				"twitter" : "",
 				"birthday" : "09-08-1996",
-				"background" : "#ff944b"
+				"background" : "#DF7201"
 			},
 			{
 				"id" : "nanamin",
@@ -95,7 +97,7 @@
 				"kanji" : "山下七海",
 				"twitter" : "",
 				"birthday" : "07-19-1995",
-				"background" : "#ff944b"
+				"background" : "#6F2275"
 			},
 			{
 				"id" : "minyami",
@@ -103,7 +105,7 @@
 				"kanji" : "田中美海",
 				"twitter" : "",
 				"birthday" : "01-22-1996",
-				"background" : "#ff944b"
+				"background" : "#F0CB00"
 			},
 			{
 				"id" : "mayushii",
@@ -111,7 +113,7 @@
 				"kanji" : "吉岡茉祐",
 				"twitter" : "",
 				"birthday" : "11-07-1995",
-				"background" : "#ff944b"
+				"background" : "#E4010B"
 			},
 			{
 				"id" : "aichan",
@@ -119,7 +121,7 @@
 				"kanji" : "永野愛理",
 				"twitter" : "",
 				"birthday" : "01-19-1993",
-				"background" : "#ff944b"
+				"background" : "#0081C7"
 			},
 			{
 				"id" : "kayatan",
@@ -127,7 +129,7 @@
 				"kanji" : "奥野香耶",
 				"twitter" : "",
 				"birthday" : "03-01-1991",
-				"background" : "#ff944b"
+				"background" : "#248132"
 			},
 			{
 				"id" : "yoppi",
@@ -135,11 +137,12 @@
 				"kanji" : "青山吉能",
 				"twitter" : "",
 				"birthday" : "05-15-1996",
-				"background" : "#ff944b"
+				"background" : "#94D8EC"
 			}
 		]
 	},
 	"million" : {
+		"id" : "million",
 		"name" : "Million Live!",
 		"anime" : "",
 		"members" : []
