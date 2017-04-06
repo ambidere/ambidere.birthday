@@ -10,7 +10,7 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015', 'stage-0'],
@@ -26,10 +26,19 @@ module.exports = {
     path: "../assets/js",
     filename: "client.min.js"
   },
-  plugins: debug ? [] : [
+  plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+    new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify('production')}),
+    new webpack.optimize.UglifyJsPlugin({ 
+      beautify: false, 
+      mangle: false, 
+      sourcemap: true,
+      compress : {
+        unused : true,
+        dead_code : true,
+        warnings : false
+      } }),
   ],
 };
  

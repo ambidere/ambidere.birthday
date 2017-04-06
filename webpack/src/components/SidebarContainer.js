@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Sidebar, Button, Menu, Image } from 'semantic-ui-react'
 
-import _ from "lodash"
+import isEmpty from 'lodash/isEmpty'
 
 import { getBirthdayForGroup, clearBirthdays } from "../actions"
 
@@ -16,7 +16,7 @@ export default class SidebarContainer extends Component {
 
 	handleItemClick(e, data) {
 		window.location.hash = data.name
-		if (_.isEmpty(data.name)) {
+		if (isEmpty(data.name)) {
 			this.props.dispatch(clearBirthdays())
 		}	
 		else {

@@ -6,35 +6,47 @@
 		"members" : [
 			{
 				"id" : "anchan",
-				"english" : "Inami Anju",
+				"english" : "Anju Inami",
 				"kanji" : "伊波杏樹",
 				"twitter" : "anju_inami",
 				"birthday" : "02-07-1996",
-				"background" : "#ff944b"
+				"char_kanji" : "高海千歌",
+				"char_en" : "Takami Chika",
+				"color" : "#ff944b",
+				"profile" : "http://www.sma.co.jp/artist/profile/index/318"
 			},
 			{
 				"id" : "rikyako",
-				"english" : "Rikako Aida",
+				"english" : "Aida Rikako",
 				"kanji" : "逢田梨香子",
 				"twitter" : "Rikako_Aida",
 				"birthday" : "08-08-1992",
-				"background" : "#ff8888"
+				"char_kanji" : "桜内梨子",
+				"char_en" : "Sakurauchi Riko",
+				"color" : "#ff8888",
+				"profile" : "http://www.kenproduction.co.jp/talent/member.php?mem=w112"
 			},
 			{
 				"id" : "suwawa",
-				"english" : "Nanaka Suwa",
+				"english" : "Suwa Nanaka",
 				"kanji" : "諏訪ななか",
 				"twitter" : "suwananaka",
 				"birthday" : "11-02-1994",
-				"background" : "#4ccbad"
+				"char_kanji" : "松浦果南",
+				"char_en" : "Matsuura Kanan",
+				"color" : "#4ccbad",
+				"profile" : "http://amuleto.jp/talents/%E8%AB%8F%E8%A8%AA-%E3%81%AA%E3%81%AA%E3%81%8B.html"
 			},
 			{
 				"id" : "arisha",
-				"english" : "Arisa Komiya",
+				"english" : "Komiya Arisa",
 				"kanji" : "小宮有紗",
 				"twitter" : "box_komiyaarisa",
 				"birthday" : "02-05-1994",
-				"background" : "#e85c5c"
+				"char_kanji" : "黒澤ダイヤ",
+				"char_en" : "Kurosawa Dia",
+				"color" : "#e85c5c",
+				"profile" : "http://www.box-corporation.com/?portfolios=%E5%B0%8F%E5%AE%AE%E6%9C%89%E7%B4%97"
 			},
 			{
 				"id" : "shukashuu",
@@ -42,7 +54,10 @@
 				"kanji" : "斉藤朱夏",
 				"twitter" : "Saito_Shuka",
 				"birthday" : "08-16-1996",
-				"background" : "#4cb1dc"
+				"char_kanji" : "渡辺曜",
+				"char_en" : "Watanabe You",
+				"color" : "#4cb1dc",
+				"profile" : "http://www.holypeak.com/talent/voiceactor/shuka_saito.html"
 			},
 			{
 				"id" : "aikyan",
@@ -50,7 +65,10 @@
 				"kanji" : "小林愛香",
 				"twitter" : "Aikyan_",
 				"birthday" : "10-23-1993",
-				"background" : "#adadad"
+				"char_kanji" : "津島善子",
+				"char_en" : "Tsushima Yoshiko",
+				"color" : "#adadad",
+				"profile" : "http://newcome.jp/artists/%E5%B0%8F%E6%9E%97%E6%84%9B%E9%A6%99/"
 			},
 			{
 				"id" : "king",
@@ -58,7 +76,10 @@
 				"kanji" : "高槻かなこ",
 				"twitter" : "Kanako_tktk",
 				"birthday" : "09-25-1993",
-				"background" : "#cfbc21"
+				"char_kanji" : "国木田花丸",
+				"char_en" : "Kunikida Hanamaru",
+				"color" : "#cfbc21",
+				"profile" : "http://artist.amuse.co.jp/artist/takatsuki_kanako/"
 			},
 			{
 				"id" : "ainyan",
@@ -66,7 +87,10 @@
 				"kanji" : "鈴木愛奈",
 				"twitter" : "aina_suzuki723",
 				"birthday" : "07-23-1995",
-				"background" : "#aa48db"
+				"char_kanji" : "小原鞠莉",
+				"char_en" : "Ohara Mari",
+				"color" : "#aa48db",
+				"profile" : "http://iamagency.sukurepo.jp/actors/women"
 			},
 			{
 				"id" : "furirin",
@@ -74,7 +98,10 @@
 				"kanji" : "降幡愛",
 				"twitter" : "furihata_ai",
 				"birthday" : "02-19-1994",
-				"background" : "#e371ba"
+				"char_kanji" : "黒澤ルビィ",
+				"char_en" : "Kurosawa Ruby",
+				"color" : "#e371ba",
+				"profile" : "http://office-tb.com/furihata_ai/"
 			}
 		]
 	},
@@ -85,59 +112,66 @@
 		"members" : [
 			{
 				"id" : "myuchan",
-				"english" : "Miyu Takagi",
+				"english" : "Takagi Miyu",
 				"kanji" : "高木美佑",
 				"twitter" : "",
 				"birthday" : "09-08-1996",
-				"background" : "#DF7201"
+				"color" : "#DF7201",
+				"profile" : "http://www.81produce.co.jp/list.cgi?lady+3111126273000"
 			},
 			{
 				"id" : "nanamin",
-				"english" : "Nanami Yamashita",
+				"english" : "Yamashita Nanami",
 				"kanji" : "山下七海",
 				"twitter" : "",
 				"birthday" : "07-19-1995",
-				"background" : "#6F2275"
+				"color" : "#6F2275",
+				"profile" : "http://www.81produce.co.jp/list.cgi?lady+7161223141410"
 			},
 			{
 				"id" : "minyami",
-				"english" : "Minami Tanaka",
+				"english" : "Tanaka Minami",
 				"kanji" : "田中美海",
 				"twitter" : "",
 				"birthday" : "01-22-1996",
-				"background" : "#F0CB00"
+				"color" : "#F0CB00",
+				"profile" : "http://www.81produce.co.jp/list.cgi?lady+3141116241620"
 			},
 			{
 				"id" : "mayushii",
-				"english" : "Mayu Yoshioka",
+				"english" : "Yoshioka Mayu",
 				"kanji" : "吉岡茉祐",
 				"twitter" : "",
 				"birthday" : "11-07-1995",
-				"background" : "#E4010B"
+				"color" : "#E4010B",
+				"profile" : "http://www.81produce.co.jp/list.cgi?lady+7522051161730"
 			},
 			{
 				"id" : "aichan",
-				"english" : "Airi Eino",
+				"english" : "Eino Airi",
 				"kanji" : "永野愛理",
 				"twitter" : "",
 				"birthday" : "01-19-1993",
-				"background" : "#0081C7"
+				"color" : "#0081C7",
+				"profile" : "http://www.81produce.co.jp/list.cgi?lady+0402450102820"
 			},
 			{
 				"id" : "kayatan",
-				"english" : "Kaya Okuno",
+				"english" : "Okuno Kaya",
 				"kanji" : "奥野香耶",
 				"twitter" : "",
 				"birthday" : "03-01-1991",
-				"background" : "#248132"
+				"color" : "#248132",
+				"profile" : "http://www.81produce.co.jp/list.cgi?lady+0513451171000"
 			},
 			{
 				"id" : "yoppi",
-				"english" : "Yoshino Aoyama",
+				"english" : "Aoyama Yoshino",
 				"kanji" : "青山吉能",
 				"twitter" : "",
 				"birthday" : "05-15-1996",
-				"background" : "#94D8EC"
+				"color" : "#94D8EC",
+				"profile" : "http://www.81produce.co.jp/list.cgi?lady+0105716175220"
 			}
 		]
 	},

@@ -2,7 +2,8 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { Provider } from "react-redux"
 import MainLayout from "./components/MainLayout"
-import _ from "lodash"
+import size from 'lodash/size'
+import _ from 'lodash'
 
 import store from "./store"
 
@@ -10,7 +11,7 @@ const app = document.getElementById('app')
 
 var split = _.split(window.location, '#');
 
-if (_.size(split) > 1) {
+if (size(split) > 1) {
 	ReactDOM.render(<Provider store={store}>
 		<MainLayout group={split[1]}/>
 	</Provider>, app)

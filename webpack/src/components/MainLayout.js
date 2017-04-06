@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Image } from 'semantic-ui-react'
 
+import isEmpty from 'lodash/isEmpty'
 import { connect } from "react-redux"
 
 import LoaderContainer from "./LoaderContainer"
@@ -47,7 +48,7 @@ export default class MainLayout extends Component {
 	        	<main>
 	        		{data}
 	        	</main>
-		        <Image className='corner_bg' src='assets/bg/marei.png'/>
+		        <Image className='corner_bg' src='assets/bg/marei.png' hidden={!isEmpty(members)}/>
 			</div>
 		);
 	}
