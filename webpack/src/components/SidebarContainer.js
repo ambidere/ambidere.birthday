@@ -44,6 +44,9 @@ export default class SidebarContainer extends Component {
             	<Menu.Item name='million' active={active === "million"} onClick={this.handleItemClick.bind(this)}>
               		<Image centered src='assets/logos/million.png'/>
             	</Menu.Item>
+            	<Menu.Item name='walkure' active={active === "walkure"} onClick={this.handleItemClick.bind(this)}>
+              		<Image centered src='assets/logos/walkure.png'/>
+            	</Menu.Item>
         	</Sidebar>
 		);
 	}

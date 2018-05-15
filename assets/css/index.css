@@ -6,6 +6,24 @@
 
 	main {
 		margin-left: 150px;
+		position: relative;
+	}
+
+	.group-background {
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		z-index: 0;
+		-webkit-filter: blur(4px);
+		filter: blur(4px);
 	}
 
 	.image.corner_bg {
@@ -16,7 +34,9 @@
 	}
 
 	.group-container {
-		margin: 2%;
+		margin: 0% 2%;
+		position: relative;
+		z-index: 10;
 	}
 
 	.group-header {
@@ -42,12 +62,13 @@
 	.member {
 		position: relative;
 	    width: 32%;
-	    height: 220pt;
-	    margin: 10px 0px;
+	    height: 250pt;
+	    margin: 10pt 0px;
 	    float: left;
 	    overflow: hidden;
 	    border-bottom: 5px solid #000;
-	    background-color: #ecf0f1;
+	    background-color: rgba(0,0,0,0.5);
+	    color: #eee;
 	}
 
 	.member:nth-child(3n+0) {
@@ -60,6 +81,7 @@
 
 	.pics-container {
 		width: 100%;
+		margin-top: 10pt;
 		position: relative;
 	}
 
@@ -90,34 +112,43 @@
 	}
 
 	.birthdate-container {
-		width: 33%;
-		float: left;
+		width: 100%;
 		text-align: center;
+	}
+
+	.birthdate-container .fa:after {
+		content: " ";
 	}
 
 	.character-container {
-		width: 33%;
+		width: 50%;
 		float: left;
 		text-align: center;
 	}
 
-	.character-name .english-name {
+	.character-container .english-name {
 		font-weight: bold;
 		font-size: 10pt;
 	}
 
-	.character-name .kanji-name {
+	.character-container .kanji-name {
 		font-size: 8pt;
 	}
 
-	.other-detail-container {
-		width: 33%;
+	.profile-container {
+		width: 50%;
 		float: left;
 		text-align: center;
+		line-height: 38px;
 	}
 
-	.other-detail-container span {
+	.profile-container span {
 		margin: 0 5pt;
+		display: inline-block;
+	}
+
+	.profile-container a {
+		display: inline-block;
 	}
 
 	.name-container .name {
@@ -149,153 +180,43 @@
 	}
 
 	.unit-container {
+		position: relative;
 		text-align: center;
 	    float: left;
 	    width: 20%;
 	}
 
-	/*.groupContainer {
-		width : 98%;
-		margin: 0% 2%;
+	.countdown-progress {
+		position: relative;
+		width: 80%;
+		background-color: #fff;
+		height: 2px;
+		bottom: 0;
+		margin: 0 auto;
+		margin-top: 2pt;
 	}
 
-	.membersContainer {
-	    width: 96%;
-	    color: #fff;
-	    margin: 0% 2%;
-	}
-	.membersContainer:after {
-	    content: " ";
-	    display: block;
-	    height: 0;
-	    clear: both;
-	    overflow: hidden;
-	    visibility: hidden;
+	.member-enter {
+	  opacity: 0;
+	  width: 0px;
 	}
 
-	.member {
-	    position: relative;
-	    width: 32%;
-	    height: 110pt;
-	    margin: 10px 0px;
-	    float: left;
-	    overflow: hidden;
-	    border-bottom: 5px solid #ffffff;
-	}
-	.member .memberColumn {
-	    float: left;
-	    z-index: 3;
+	.member-enter .member-enter-active {
+	  opacity: 1;
+	  width: 32%;
+	  transition: 700ms;
 	}
 
-	.nameContainer {
-	    position: relative;
-	    width: 100%;
-	    height: 50pt;
-	    margin-top: 5pt;
-	    text-align: center;
-	}
-	.nameContainer {
-	    display: inline-block;
-	}
-	.birthdayContainer {
-	    position: relative;
-	    margin: 5pt;
-	    height: 50pt;
-	}
-	.unitContainer {
-	    text-align: center;
-	    float: left;
-	    width: 20%;
-	}
-	.unitContainer .number {
-	    font-size: 15pt;
-	}
-	.unitContainer .unit {
-	    font-size: 7pt;
-	}
-	.picsContainer {
-	    position: relative;
-	    overflow: none;
-	    width: 40%;
-	    height: 110pt;
-	}
-	.picsContainer .pic,
-	.picsContainer .arc {
-	    position: absolute;
-	    margin: auto;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-	    left: 0;
-	    -webkit-border-radius: 50%;
-	    -moz-border-radius: 50%;
-	    border-radius: 50%;
-	}
-	.picsContainer .pic {
-	    width: 90pt;
-	    height: 90pt;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	}
-	.picsContainer .arc {
-	    width: 93pt;
-	    height: 93pt;
-	    border: 5px solid transparent;
-	    border-top: 5px solid #fff;
-	    -webkit-animation: spin 3s linear infinite;
-	    -moz-animation: spin 3s linear infinite;
-	    -o-animation: spin 3s linear infinite;
-	    -ms-animation: spin 3s linear infinite;
-	    animation: spin 3s linear infinite;
-	}
-	.details {
-	    width: 60%;
-	}
-	.details .name {
-	    font-size: 12pt;
-	}
-	.details .birthday {
-	    font-size: 9pt;
+	.member-leave {
+	  opacity: 1;
+	  width: 32%;
 	}
 
-	.twitter a {
-	    color: #ffffff;
-	    font-size: 8pt;
-	    text-decoration: none;
-	}
+	.member-leave .member-leave-active {
+	  opacity: 0;
+	  width: 0px;
+	  transition: 700ms;
 
-	@-webkit-keyframes spin {
-	    0% {
-	        -webkit-transform: rotate(0deg);
-	        -moz-transform: rotate(0deg);
-	        -o-transform: rotate(0deg);
-	        -ms-transform: rotate(0deg);
-	        transform: rotate(0deg);
-	    }
-	    100% {
-	        -webkit-transform: rotate(360deg);
-	        -moz-transform: rotate(360deg);
-	        -o-transform: rotate(360deg);
-	        -ms-transform: rotate(360deg);
-	        transform: rotate(360deg);
-	    }
-	}
-	@keyframes spin {
-	    0% {
-	        -webkit-transform: rotate(0deg);
-	        -moz-transform: rotate(0deg);
-	        -o-transform: rotate(0deg);
-	        -ms-transform: rotate(0deg);
-	        transform: rotate(0deg);
-	    }
-	    100% {
-	        -webkit-transform: rotate(360deg);
-	        -moz-transform: rotate(360deg);
-	        -o-transform: rotate(360deg);
-	        -ms-transform: rotate(360deg);
-	        transform: rotate(360deg);
-	    }
-	}*/
 }
 
 /*@media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (orientation: portrait) {

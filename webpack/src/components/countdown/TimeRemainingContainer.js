@@ -9,11 +9,11 @@ export default class TimeRemainingContainer extends Component {
 
 		return (
             <div class="countdown-container">
-            	<UnitContainer amount={week} unit={"week"}/>
-            	<UnitContainer amount={day} unit={"day"}/>
-            	<UnitContainer amount={hour} unit={"hour"}/>
-            	<UnitContainer amount={minute} unit={"minute"}/>
-            	<UnitContainer amount={second} unit={"second"}/>
+            	<UnitContainer amount={week} unit={"week"} max={52}/>
+            	<UnitContainer amount={day} unit={"day"} max={7}/>
+            	<UnitContainer amount={hour} unit={"hour"} max={24}/>
+            	<UnitContainer amount={minute} unit={"minute"} max={60}/>
+            	<UnitContainer amount={second} unit={"second"} max={60}/>
             </div>
 		);
 	}

@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import Moment from 'moment-timezone';
 
 import TimeRemainingContainer from './TimeRemainingContainer'
-import NameContainer from './NameContainer'
 import PicContainer from './PicContainer'
 
 import isEmpty from 'lodash/isEmpty';
@@ -76,35 +75,32 @@ export default class BirthdayCountdown extends Component {
             </a>
         </span>);
 
-        const birthdayFormat = Moment.tz(birthday, "MM-DD-YYYY", "Asia/Tokyo").format('MMM Do YYYY')
+        const birthdayFormat = " " + Moment.tz(birthday, "MM-DD-YYYY", "Asia/Tokyo").format('MMM Do YYYY')
 
 		return (
 			<div id={id} className="member" style={textStyle}>
 				<PicContainer group_id={group_id} id={id}/>
-                <NameContainer 
-            		english={english}
-					kanji={kanji}
-					twitter={twitter}
-					birthday={birthday}/>
+                <div className="name-container">
+	                <span className="name english-name">{english}</span>
+	                <span className="name kanji-name">{kanji}</span>
+	            </div>
+	            <div className="birthdate-container">
+                    <span className="fa fa-birthday-cake" aria-hidden="true">
+                    </span>
+                    {birthdayFormat}
+                </div>
 				<div className='detail-container'>
-					<div className='detail other-detail-container'>
-						<span>
+					<div className='detail profile-container'>
+						<span className="profile">
 							<a href={profile} target="_blank">
 				                <i className="fa fa-user fa-2x" aria-hidden="true"></i>
 				            </a>
 						</span>
 						{twitterElem}
 					</div>
-					<div className='detail birthdate-container'>
-						<div className="birthday">
-		                    <span className="fa fa-birthday-cake fa-2x" aria-hidden="true">
-		                    </span>
-		                    {birthdayFormat}
-		                </div>
-					</div>
 					<div className='detail character-container'>
-						<span className='name kanji-name'>{char_en}</span><br/>
-						<span className='name english-name'>{char_kanji}</span>
+						<span className='name english-name'>{char_en}</span><br/>
+						<span className='name kanji-name'>{char_kanji}</span>
 					</div>
 				</div>
                 <TimeRemainingContainer 

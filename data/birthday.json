@@ -114,8 +114,10 @@
 				"id" : "myuchan",
 				"english" : "Takagi Miyu",
 				"kanji" : "高木美佑",
-				"twitter" : "",
+				"twitter" : "wakeupgirls_PR",
 				"birthday" : "09-08-1996",
+				"char_kanji" : "岡本未夕",
+				"char_en" : "Okamoto Miyu",
 				"color" : "#DF7201",
 				"profile" : "http://www.81produce.co.jp/list.cgi?lady+3111126273000"
 			},
@@ -123,8 +125,10 @@
 				"id" : "nanamin",
 				"english" : "Yamashita Nanami",
 				"kanji" : "山下七海",
-				"twitter" : "",
+				"twitter" : "wakeupgirls_PR",
 				"birthday" : "07-19-1995",
+				"char_kanji" : "久海菜々美",
+				"char_en" : "Nanami Hisami",
 				"color" : "#6F2275",
 				"profile" : "http://www.81produce.co.jp/list.cgi?lady+7161223141410"
 			},
@@ -132,8 +136,10 @@
 				"id" : "minyami",
 				"english" : "Tanaka Minami",
 				"kanji" : "田中美海",
-				"twitter" : "",
+				"twitter" : "wakeupgirls_PR",
 				"birthday" : "01-22-1996",
+				"char_kanji" : "片山実波",
+				"char_en" : "Katayama Minami",
 				"color" : "#F0CB00",
 				"profile" : "http://www.81produce.co.jp/list.cgi?lady+3141116241620"
 			},
@@ -141,8 +147,10 @@
 				"id" : "mayushii",
 				"english" : "Yoshioka Mayu",
 				"kanji" : "吉岡茉祐",
-				"twitter" : "",
+				"twitter" : "wakeupgirls_PR",
 				"birthday" : "11-07-1995",
+				"char_kanji" : "島田真夢",
+				"char_en" : "Shimada Mayu",
 				"color" : "#E4010B",
 				"profile" : "http://www.81produce.co.jp/list.cgi?lady+7522051161730"
 			},
@@ -150,8 +158,10 @@
 				"id" : "aichan",
 				"english" : "Eino Airi",
 				"kanji" : "永野愛理",
-				"twitter" : "",
+				"twitter" : "wakeupgirls_PR",
 				"birthday" : "01-19-1993",
+				"char_kanji" : "林田藍里",
+				"char_en" : "Hayashida Airi",
 				"color" : "#0081C7",
 				"profile" : "http://www.81produce.co.jp/list.cgi?lady+0402450102820"
 			},
@@ -159,8 +169,10 @@
 				"id" : "kayatan",
 				"english" : "Okuno Kaya",
 				"kanji" : "奥野香耶",
-				"twitter" : "",
+				"twitter" : "wakeupgirls_PR",
 				"birthday" : "03-01-1991",
+				"char_kanji" : "菊間夏夜",
+				"char_en" : "Kikuma Kaya",
 				"color" : "#248132",
 				"profile" : "http://www.81produce.co.jp/list.cgi?lady+0513451171000"
 			},
@@ -168,8 +180,10 @@
 				"id" : "yoppi",
 				"english" : "Aoyama Yoshino",
 				"kanji" : "青山吉能",
-				"twitter" : "",
+				"twitter" : "wakeupgirls_PR",
 				"birthday" : "05-15-1996",
+				"char_kanji" : "七瀬佳乃",
+				"char_en" : "Nanase Yoshino",
 				"color" : "#94D8EC",
 				"profile" : "http://www.81produce.co.jp/list.cgi?lady+0105716175220"
 			}
@@ -179,6 +193,12 @@
 		"id" : "million",
 		"name" : "Million Live!",
 		"anime" : "",
+		"members" : []
+	},
+	"walkure" : {
+		"id" : "walkure",
+		"name" : "Macross Delta",
+		"anime" : "Macross Delta",
 		"members" : []
 	}
 }

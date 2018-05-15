@@ -39,14 +39,19 @@ export default class MainLayout extends Component {
 	render() {
 		const { name, members, group_id, fetching, dispatch } = this.props;
 		const { active } = this.state;
+
+		const backgroundStyle = {
+			backgroundImage : "url(../assets/bg/" + group_id + ".jpg)"
+		}
 		
-		const data = fetching ? <LoaderContainer/> : <BirthdayContainer group_id={group_id} name={name} members={members}/>;
+		const data = <BirthdayContainer group_id={group_id} name={name} members={members}/>;
 
 		return (
 			<div id="container">
 	        	<SidebarContainer active={active} dispatch={dispatch}/>
 	        	<main>
 	        		{data}
+	        		<div className="group-background" style={backgroundStyle}/>
 	        	</main>
 		        <Image className='corner_bg' src='assets/bg/marei.png' hidden={!isEmpty(members)}/>
 			</div>

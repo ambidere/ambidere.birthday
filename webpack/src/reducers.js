@@ -15,7 +15,7 @@ export default function reducer(state={
 		}
 		case "CLEAR_BIRTHDAYS" : {
 			return {...state, name : "", members : []}
-		}
+		} 
 	}
 	return state
 }
